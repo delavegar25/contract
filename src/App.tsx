@@ -1,11 +1,11 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { JsonRpcProvider, Connection, devnetConnection } from '@mysten/sui';
 
 interface NFT {
   id: string;
   name: string;
   url: string;
-}
+} 
 
 const App: React.FC = () => {
   const [walletConnected, setWalletConnected] = useState<boolean>(false);
